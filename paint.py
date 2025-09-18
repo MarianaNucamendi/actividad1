@@ -38,7 +38,17 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end.""" 
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    for count in range(36):
+        forward((end.x-start.x)/10)
+        forward((end.y-start.y)/10)
+        left(10)
+
+    end_fill()
 
 
 def rectangle(start, end):
@@ -74,7 +84,7 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
-onkey(lambda: color('yellow'), 'Y')  "Se agregó el color amarillo"
+onkey(lambda: color('yellow'), 'Y')  #Se agregó el color amarillo
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
