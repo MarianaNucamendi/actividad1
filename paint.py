@@ -53,7 +53,7 @@ def circle(start, end):
     end_fill()
 
 
-def rectangle(start, end):
+def rectangle(start, end): #Se agregó la función para dibujar un rectángulo
     """Draw rectangle from start to end."""
     up()
     goto(start.x, start.y)
@@ -68,7 +68,7 @@ def rectangle(start, end):
 
     end_fill()
 
-def triangle(start, end):
+def triangle(start, end): #Se agregó la función para dibujar un triángulo
     """Draw triangle from start to end."""
     up()
     goto(start.x, start.y)
