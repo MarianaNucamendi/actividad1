@@ -1,4 +1,4 @@
-# **Actividad 1 **
+# **Actividad 1**
 
 ## Este repositorio contiene el código base del juego *Paint* tomado de la librería FreeGames
 
