@@ -43,10 +43,12 @@ def circle(start, end):
     down()
     begin_fill()
     
+     """Se calculan las distancias en los ejes x,y
+        se dividen entre 10 para ajustar el tamaño""" 
     for count in range(36):
         forward((end.x-start.x)/10)
         forward((end.y-start.y)/10)
-        left(10)
+        left(10) 
 
     end_fill()
 
